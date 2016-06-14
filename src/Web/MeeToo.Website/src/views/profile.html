@@ -1,0 +1,39 @@
+<template>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">${heading}</h1>
+            <hr />
+
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="//placehold.it/250" class="avatar img-circle" alt="avatar">
+                </div>
+            </div>
+
+            <div class="col-md-8 padding-top-20">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-lg-3 text-right">Прізвище:</label>
+                        <div class="col-lg-8">${user.lastName}</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 text-right">Ім'я:</label>
+                        <div class="col-lg-8">${user.firstName}</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 text-right">По батькові:</label>
+                        <div class="col-lg-8">${user.middleName}</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 text-right">Email:</label>
+                        <div class="col-lg-8">${user.email}</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 text-right">Група:</label>
+                        <div class="col-lg-8">${user.group}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

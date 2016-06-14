@@ -1,0 +1,16 @@
+<template>
+    <table class="table table-hover">
+        <tbody>
+            <tr repeat.for="test of tests">
+                <td>
+                    <span if.bind="test.isComplete" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+                </td>
+                <td>${test.id}</td>
+                <td>
+                    <span if.bind="test.result > 0">${test.result}/100</span>
+                    <a class="btn btn-default" if.bind="test.result == 0" href="#/test/${test.id}">Старт</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</template>

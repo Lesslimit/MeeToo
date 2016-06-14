@@ -1,0 +1,30 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "rootDir": "src/",
+    "outDir": "./wwwroot/dist",
+    "sourceMap": true,
+    "inlineSources": true,
+    "target": "es6",
+    "module": "system",
+    "declaration": false,
+    "noImplicitAny": false,
+    "noResolve": true,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./typings/globals/**/*.d.ts",
+    "./custom_typings/**/*.d.ts",
+    "./wwwroot/jspm_packages/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

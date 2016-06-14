@@ -1,0 +1,12 @@
+<template>
+    <div if.bind="showLayout">
+        <require from="views/layout/nav-bar.html"></require>
+    </div>
+    <require from="bootstrap/css/bootstrap.css"></require>
+
+    <nav-bar router.bind="router"></nav-bar>
+
+    <div class="page-host">
+        <router-view></router-view>
+    </div>
+</template>

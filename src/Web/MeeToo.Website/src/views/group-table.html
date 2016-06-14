@@ -1,0 +1,30 @@
+<template>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Прізвище</th>
+                <th>Ім'я</th>
+                <th>Тест 1</th>
+                <th>Тест 2</th>
+                <th>Тест 3</th>
+                <th>Тест 4</th>
+                <th>Тест 5</th>
+                <th>Екзамен</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr repeat.for="student of students">
+                <td>${student.firstName}</td>
+                <td>${student.lastName}</td>
+                <td repeat.for="test of student.tests">
+                    <div if.bind="test.result > 0">${test.result}</div>
+                    <div if.bind="test.result == 0">-</div>
+                </td>
+                <td>
+                    <div if.bind="student.exam > 0">${student.exam}</div>
+                    <div if.bind="student.exam == 0">-</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</template>
